@@ -1,360 +1,139 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
-	<title>Rex Lin - Dashboard</title>
+	<title>Rex Lin</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="assets/css/dashboard.css" />
+	<meta name="description" content="Rex Lin — ML Engineer, Founder, Analog Photographer." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<body id="top">
-	<div class="app-container">
-		<!-- Sidebar -->
-		<nav class="sidebar">
-			<div class="sidebar-header">
-				<a href="#dashboard" class="image avatar">
-					<img src="images/avatar.jpg" alt="Rex Lin" />
-				</a>
-				<h1><strong>Rex Lin</strong></h1>
-				<p>Senior Machine Learning Engineer</p>
-			</div>
-
-			<ul class="nav-menu">
-				<li><a href="#dashboard" class="nav-link active" data-page="dashboard">
-						<i class="fa fa-tachometer"></i> Dashboard
-					</a></li>
-				<li><a href="#resume" class="nav-link" data-page="resume">
-						<i class="fa fa-file-text"></i> Resume
-					</a></li>
-				<li><a href="#portfolio" class="nav-link" data-page="portfolio">
-						<i class="fa fa-briefcase"></i> Portfolio
-					</a></li>
-				<li><a href="#blog" class="nav-link" data-page="blog">
-						<i class="fa fa-pencil"></i> Blog
-					</a></li>
-				<li><a href="#contact" class="nav-link" data-page="contact">
-						<i class="fa fa-envelope"></i> Contact
-					</a></li>
+<body>
+	<header class="site-header">
+		<nav class="nav">
+			<a href="#" class="nav-name">Rex Lin</a>
+			<button class="nav-toggle" aria-label="Toggle menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<ul class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#building">Building</a></li>
+				<li><a href="#photography">Photography</a></li>
+				<li><a href="#writing">Writing</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
-
-			<div class="sidebar-footer">
-				<ul class="social-links">
-					<li><a href="https://twitter.com/rexlintc"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="https://github.com/rexlintc"><i class="fa fa-github"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/tingchihlin/"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="mailto:tc.lin@berkeley.edu"><i class="fa fa-envelope"></i></a></li>
-				</ul>
-			</div>
 		</nav>
+	</header>
 
-		<!-- Main Content -->
-		<main class="main-content">
-			<!-- Dashboard Page -->
-			<div id="dashboard-page" class="page active">
-				<header class="page-header">
-					<h1>Dashboard</h1>
-					<p>Overview of my activities and metrics</p>
-				</header>
+	<main>
 
-				<div class="stats-grid">
-					<div class="stat-card">
-						<div class="stat-icon">
-							<i class="fa fa-code"></i>
-						</div>
-						<div class="stat-content">
-							<h3 id="github-commits">Loading...</h3>
-							<p>Commits This Year</p>
-						</div>
-					</div>
-
-					<div class="stat-card">
-						<div class="stat-icon">
-							<i class="fa fa-folder"></i>
-						</div>
-						<div class="stat-content">
-							<h3 id="total-projects">4</h3>
-							<p>Total Projects</p>
-						</div>
-					</div>
-
-					<div class="stat-card">
-						<div class="stat-icon">
-							<i class="fa fa-pencil"></i>
-						</div>
-						<div class="stat-content">
-							<h3 id="blog-posts">0</h3>
-							<p>Blog Posts</p>
-						</div>
-					</div>
-
-					<div class="stat-card">
-						<div class="stat-icon">
-							<i class="fa fa-calendar"></i>
-						</div>
-						<div class="stat-content">
-							<h3 id="years-experience">5+</h3>
-							<p>Years Experience</p>
-						</div>
-					</div>
+		<!-- Hero -->
+		<section class="hero">
+			<div class="container">
+				<h1>Rex Lin</h1>
+				<p class="hero-tagline">ML Engineer &middot; Founder &middot; Analog Photographer</p>
+				<p class="hero-sub">Building something new. Previously at Affirm.</p>
+				<div class="hero-links">
+					<a href="https://github.com/rexlintc" target="_blank" rel="noopener">GitHub</a>
+					<a href="https://www.linkedin.com/in/tingchihlin/" target="_blank" rel="noopener">LinkedIn</a>
+					<a href="https://twitter.com/rexlintc" target="_blank" rel="noopener">Twitter</a>
+					<a href="mailto:tc.lin@berkeley.edu">Email</a>
 				</div>
+			</div>
+		</section>
 
-				<div class="recent-activity">
-					<h2>Recent Activity</h2>
-					<div class="activity-feed">
-						<div class="activity-item">
-							<div class="activity-icon">
-								<i class="fa fa-briefcase"></i>
-							</div>
-							<div class="activity-content">
-								<p><strong>Latest experience:</strong> Senior Machine Learning Engineer at Affirm</p>
-								<small>Led cross-functional teams on loan profitability systems</small>
-							</div>
-						</div>
-						<div class="activity-item">
-							<div class="activity-icon">
-								<i class="fa fa-code-fork"></i>
-							</div>
-							<div class="activity-content">
-								<p><strong>Latest Project:</strong> Stereocilia Modeling</p>
-								<small>Cryo-EM 3D tomographic analysis</small>
-							</div>
-						</div>
+		<!-- About -->
+		<section id="about" class="section">
+			<div class="container">
+				<div class="about-inner">
+					<img src="images/avatar.jpg" alt="Rex Lin" class="about-avatar" />
+					<div class="about-text">
+						<h2>About</h2>
+						<p>I'm a machine learning engineer who spent 6 years at Affirm building production ML systems —
+							from a horizontally scalable online feature store to a loan profitability underwriting
+							system that generated $8M+ in contribution margin. I also hold a patent on a
+							simulation-based loan pricing optimization engine.</p>
+						<p>I studied Data Science and Molecular &amp; Cell Biology at UC Berkeley, a combination
+							that still shapes how I think about modeling: rigorously, from first principles.</p>
+						<p>Outside of work I shoot film. There's something about the deliberateness of analog
+							photography — one frame at a time, no instant feedback — that I find grounding.</p>
 					</div>
 				</div>
 			</div>
+		</section>
 
-			<!-- Resume Page -->
-			<div id="resume-page" class="page">
-				<header class="page-header">
-					<h1>Resume</h1>
-					<p>Professional experience and qualifications</p>
-				</header>
-				<div class="resume-content">
-					<div class="resume-section">
-						<h2>Experience</h2>
-						<div class="job">
-							<h3>Senior Machine Learning Engineer</h3>
-							<h4>Portfolio Machine Learning, Affirm | Jan 2024 – Feb 2025</h4>
-							<p>Spearheaded the design and implementation of the next phase of the loan
-								profitability-based underwriting decision system, coordinating efforts across 4
-								cross-functional teams. Led a working pod of 5 individual contributors, providing
-								strategic guidance and technical direction on multiple concurrent projects.</p>
-						</div>
-						<div class="job">
-							<h3>Machine Learning Engineer</h3>
-							<h4>Portfolio Machine Learning, Affirm | Feb 2023 – Jan 2024</h4>
-							<p>Architected and implemented a new underwriting decision system based on loan
-								profitability (ROA), generating a proprietary online model resulting in $8.2M+
-								contribution margin. Designed and onboarded 10+ analysts to a new internal loan
-								valuations platform.</p>
-						</div>
-						<div class="job">
-							<h3>Machine Learning Engineer</h3>
-							<h4>Computational Finance, Affirm | Sep 2020 – Feb 2023</h4>
-							<p>Engineered a patented simulation-based loan pricing optimization engine, reducing analyst
-								workflow from 1 week to 6 hours. Productionized XGBoost model for user loan term
-								selection with robust monitoring and scaling infrastructure.</p>
-						</div>
-						<div class="job">
-							<h3>Machine Learning Engineer</h3>
-							<h4>Machine Learning Platform, Affirm | May 2019 – Sep 2020</h4>
-							<p>Designed horizontally scalable Online Feature Store Service using AWS Aurora and gRPC,
-								serving 1M+ features at 119 QPS. Built monitoring and data validation framework
-								processing 5M+ rows of parquet data daily.</p>
-						</div>
-					</div>
-
-					<div class="resume-section">
-						<h2>Patent</h2>
-						<div class="job">
-							<h3>System, Method and Apparatus for Optimization of Financing Programs</h3>
-							<h4>US-20240104645-A1 | Filed Sep 22, 2022 | Issued Mar 28, 2024</h4>
-							<p>Patented simulation-based loan pricing optimization system that revolutionized analyst
-								workflows and pricing strategies.</p>
-						</div>
-					</div>
-
-					<div class="resume-section">
-						<h2>Education</h2>
-						<div class="job">
-							<h3>University of California, Berkeley</h3>
-							<h4>B.A. Data Science, B.A. Molecular and Cell Biology | Aug 2014 – Dec 2018</h4>
-							<p>Dual degree in Data Science and Molecular & Cell Biology, combining quantitative analysis
-								with biological systems understanding.</p>
-						</div>
-					</div>
-
-					<div class="resume-section">
-						<h2>Skills</h2>
-						<div class="skills-grid">
-							<div class="skill-category">
-								<h4>Programming Languages</h4>
-								<ul>
-									<li>Python</li>
-									<li>SQL</li>
-									<li>Java</li>
-								</ul>
-							</div>
-							<div class="skill-category">
-								<h4>Technologies & Frameworks</h4>
-								<ul>
-									<li>Airflow</li>
-									<li>AWS</li>
-									<li>Kubernetes</li>
-									<li>PySpark</li>
-									<li>Snowflake</li>
-									<li>XGBoost</li>
-								</ul>
-							</div>
-							<div class="skill-category">
-								<h4>Tools & Platforms</h4>
-								<ul>
-									<li>Chronosphere</li>
-									<li>Git</li>
-									<li>gRPC</li>
-									<li>AWS Aurora</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="resume-actions">
-						<a href="https://drive.google.com/file/d/1E49vzhev0LZ-1xd4_2G3y4vhNXIhlMUU/view?usp=sharing"
-							class="button primary">Download Full Resume</a>
-					</div>
+		<!-- Building -->
+		<section id="building" class="section section-alt">
+			<div class="container">
+				<h2>Building</h2>
+				<div class="building-content">
+					<p class="building-name">[Startup Name]</p>
+					<p>[What you're building and the problem it solves. One or two sentences on why this matters
+						and why you're the right person to build it.]</p>
+					<p>If you've run into this problem or just want to talk, I'd love to hear from you.</p>
+					<a href="mailto:tc.lin@berkeley.edu" class="cta-link">Get in touch &rarr;</a>
 				</div>
 			</div>
+		</section>
 
-			<!-- Portfolio Page -->
-			<div id="portfolio-page" class="page">
-				<header class="page-header">
-					<h1>Portfolio</h1>
-					<p>Selected projects and work</p>
-				</header>
-				<div class="portfolio-grid">
-					<article class="project-card">
-						<a href="images/fulls/01.jpg" class="project-image">
-							<img src="images/thumbs/01.jpg" alt="Stereocilia Modeling" />
-						</a>
-						<div class="project-content">
-							<h3>Stereocilia Modeling</h3>
-							<p>Using existing cryo-EM 3D tomographic whole mount stereocilia data sets, I segmented
-								actin filaments and cross-connectors using semi-automated segmentation tools.</p>
-							<a href="https://github.com/rexlintc/stereocilia" class="project-link">
-								<i class="fa fa-github"></i> View on GitHub
-							</a>
-						</div>
-					</article>
+		<!-- Photography -->
+		<section id="photography" class="section">
+			<div class="container">
+				<h2>Photography</h2>
+				<p class="section-lead">[A line about what you shoot — subjects, formats, favorite film stocks.]</p>
+				<div class="photo-placeholder">
+					<p>Photos coming soon.</p>
+				</div>
+			</div>
+		</section>
 
-					<article class="project-card">
-						<a href="images/fulls/02.jpg" class="project-image">
-							<img src="images/thumbs/02.png" alt="Automatic Segmentation" />
-						</a>
-						<div class="project-content">
-							<h3>Automatic Segmentation</h3>
-							<p>Collaborative development of automated approach for segmentation and modeling with CNN in
-								Keras, TensorFlow.</p>
-							<a href="https://github.com/rexlintc/cnn_segmentation" class="project-link">
-								<i class="fa fa-github"></i> View on GitHub
-							</a>
-						</div>
-					</article>
-
-					<article class="project-card">
-						<a href="images/fulls/03.png" class="project-image">
-							<img src="images/thumbs/03.png" alt="3D Reconstruction" />
-						</a>
-						<div class="project-content">
-							<h3>Electron Microscopy and 3D Reconstruction</h3>
-							<p>Computational Biology Final Project focusing on advanced imaging and reconstruction
-								techniques.</p>
-							<a href="https://github.com/rexlintc/Math127" class="project-link">
-								<i class="fa fa-github"></i> View on GitHub
-							</a>
-						</div>
-					</article>
-
-					<article class="project-card">
-						<a href="images/fulls/04.jpg" class="project-image">
-							<img src="images/thumbs/04.jpg" alt="Flo Chrome Extension" />
-						</a>
-						<div class="project-content">
-							<h3>Flo - Chrome Extension</h3>
-							<p>Applied Data Science Final Project - a browser extension for enhanced productivity.</p>
-							<a href="https://github.com/rexlintc/Flo" class="project-link">
-								<i class="fa fa-github"></i> View on GitHub
-							</a>
+		<!-- Writing -->
+		<section id="writing" class="section section-alt">
+			<div class="container">
+				<h2>Writing</h2>
+				<p class="section-lead">Occasional thoughts on ML, building, and life.</p>
+				<div class="post-list">
+					<article class="post-item">
+						<span class="post-date">Coming soon</span>
+						<div>
+							<h3 class="post-title">[Why I Left Affirm to Build X]</h3>
+							<p class="post-excerpt">On the decision to leave a good job and start building
+								something from scratch.</p>
 						</div>
 					</article>
 				</div>
 			</div>
+		</section>
 
-			<!-- Blog Page -->
-			<div id="blog-page" class="page">
-				<header class="page-header">
-					<h1>Blog</h1>
-					<p>Thoughts on technology and machine learning</p>
-				</header>
-				<div class="blog-content">
-					<div class="coming-soon">
-						<i class="fa fa-pencil-square-o"></i>
-						<h3>Coming Soon</h3>
-						<p>I'm working on sharing insights about machine learning, software engineering, and technology
-							trends.</p>
-					</div>
+		<!-- Contact -->
+		<section id="contact" class="section">
+			<div class="container">
+				<h2>Contact</h2>
+				<p>Best reached by email: <a href="mailto:tc.lin@berkeley.edu">tc.lin@berkeley.edu</a></p>
+				<div class="contact-links">
+					<a href="https://github.com/rexlintc" target="_blank" rel="noopener">GitHub</a>
+					<a href="https://www.linkedin.com/in/tingchihlin/" target="_blank" rel="noopener">LinkedIn</a>
+					<a href="https://twitter.com/rexlintc" target="_blank" rel="noopener">Twitter</a>
+					<a href="https://drive.google.com/file/d/1E49vzhev0LZ-1xd4_2G3y4vhNXIhlMUU/view?usp=sharing"
+						target="_blank" rel="noopener">Resume</a>
 				</div>
 			</div>
+		</section>
 
-			<!-- Contact Page -->
-			<div id="contact-page" class="page">
-				<header class="page-header">
-					<h1>Contact</h1>
-					<p>Let's connect and collaborate</p>
-				</header>
-				<div class="contact-content">
-					<div class="contact-info">
-						<div class="contact-item">
-							<i class="fa fa-envelope"></i>
-							<div>
-								<h3>Email</h3>
-								<p><a href="mailto:tc.lin@berkeley.edu">tc.lin@berkeley.edu</a></p>
-							</div>
-						</div>
-						<div class="contact-item">
-							<i class="fa fa-linkedin"></i>
-							<div>
-								<h3>LinkedIn</h3>
-								<p><a href="https://www.linkedin.com/in/tingchihlin/">tingchihlin</a></p>
-							</div>
-						</div>
-						<div class="contact-item">
-							<i class="fa fa-github"></i>
-							<div>
-								<h3>GitHub</h3>
-								<p><a href="https://github.com/rexlintc">rexlintc</a></p>
-							</div>
-						</div>
-						<div class="contact-item">
-							<i class="fa fa-twitter"></i>
-							<div>
-								<h3>Twitter</h3>
-								<p><a href="https://twitter.com/rexlintc">@rexlintc</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-	</div>
+	</main>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/dashboard.js"></script>
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; 2026 Rex Lin</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/site.js"></script>
 </body>
 
 </html>

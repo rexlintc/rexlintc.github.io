@@ -1,360 +1,118 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Rex Lin - Dashboard</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="assets/css/dashboard.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rex Lin</title>
+<meta name="description" content="Rex Lin. Builder. Previously machine learning at Affirm.">
+<style>
+  :root {
+    --bg: #fafaf7;
+    --ink: #1a1a18;
+    --muted: #6b6b64;
+    --line: #e4e4dd;
+    --accent: #b4552d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16161a;
+      --ink: #e8e8e3;
+      --muted: #9a9a92;
+      --line: #2c2c32;
+      --accent: #e07a4d;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 88px 24px 96px; }
+  header h1 { font-size: 34px; font-weight: 700; letter-spacing: -0.02em; }
+  header .tagline { color: var(--muted); margin-top: 6px; font-size: 18px; }
+  section { margin-top: 56px; }
+  h2 {
+    font-size: 13px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.12em; color: var(--muted); margin-bottom: 18px;
+  }
+  p + p { margin-top: 14px; }
+  .item { padding: 18px 0; border-top: 1px solid var(--line); }
+  .item:last-child { border-bottom: 1px solid var(--line); }
+  .item h3 { font-size: 17px; font-weight: 600; }
+  .item .meta { color: var(--muted); font-size: 14.5px; margin-top: 2px; }
+  .item p { margin-top: 8px; font-size: 16px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .contact-row { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 4px; }
+  .contact-row a { font-size: 16px; }
+  footer { margin-top: 80px; color: var(--muted); font-size: 14px; }
+</style>
 </head>
+<body>
+<div class="wrap">
 
-<body id="top">
-	<div class="app-container">
-		<!-- Sidebar -->
-		<nav class="sidebar">
-			<div class="sidebar-header">
-				<a href="#dashboard" class="image avatar">
-					<img src="images/avatar.jpg" alt="Rex Lin" />
-				</a>
-				<h1><strong>Rex Lin</strong></h1>
-				<p>Senior Machine Learning Engineer</p>
-			</div>
+  <header>
+    <h1>Rex Lin</h1>
+    <p class="tagline">Builder.</p>
+  </header>
 
-			<ul class="nav-menu">
-				<li><a href="#dashboard" class="nav-link active" data-page="dashboard">
-						<i class="fa fa-tachometer"></i> Dashboard
-					</a></li>
-				<li><a href="#resume" class="nav-link" data-page="resume">
-						<i class="fa fa-file-text"></i> Resume
-					</a></li>
-				<li><a href="#portfolio" class="nav-link" data-page="portfolio">
-						<i class="fa fa-briefcase"></i> Portfolio
-					</a></li>
-				<li><a href="#blog" class="nav-link" data-page="blog">
-						<i class="fa fa-pencil"></i> Blog
-					</a></li>
-				<li><a href="#contact" class="nav-link" data-page="contact">
-						<i class="fa fa-envelope"></i> Contact
-					</a></li>
-			</ul>
+  <section>
+    <h2>Now</h2>
+    <p>Heads down on a startup and a few side projects. More here when they're ready. If you're curious in the meantime, email works.</p>
+  </section>
 
-			<div class="sidebar-footer">
-				<ul class="social-links">
-					<li><a href="https://twitter.com/rexlintc"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="https://github.com/rexlintc"><i class="fa fa-github"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/tingchihlin/"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="mailto:tc.lin@berkeley.edu"><i class="fa fa-envelope"></i></a></li>
-				</ul>
-			</div>
-		</nav>
+  <section>
+    <h2>Before</h2>
+    <p>Five and a half years at Affirm as a machine learning engineer, 2019 to early 2025, across the ML platform, computational finance, and portfolio ML teams. A few things I'm glad shipped:</p>
+    <div class="item" style="margin-top: 18px;">
+      <h3>Profitability-based underwriting</h3>
+      <p class="meta">Portfolio ML, 2023 to 2025</p>
+      <p>Architected an underwriting decision system based on loan profitability, with a proprietary online model that generated over $8.2M in contribution margin. Led a pod of five engineers across four teams for the next phase.</p>
+    </div>
+    <div class="item">
+      <h3>Patented loan pricing engine</h3>
+      <p class="meta">Computational Finance. US patent US-20240104645-A1, issued March 2024</p>
+      <p>Simulation-based pricing optimization that cut a week-long analyst workflow to six hours.</p>
+    </div>
+    <div class="item">
+      <h3>Online feature store</h3>
+      <p class="meta">ML Platform, 2019 to 2020</p>
+      <p>Horizontally scalable feature serving on AWS Aurora and gRPC, serving over a million features in production.</p>
+    </div>
+  </section>
 
-		<!-- Main Content -->
-		<main class="main-content">
-			<!-- Dashboard Page -->
-			<div id="dashboard-page" class="page active">
-				<header class="page-header">
-					<h1>Dashboard</h1>
-					<p>Overview of my activities and metrics</p>
-				</header>
+  <section>
+    <h2>Earlier</h2>
+    <div class="item">
+      <h3>Stereocilia imaging research</h3>
+      <p class="meta">LBNL. <a href="https://github.com/rexlintc/stereocilia">stereocilia</a> and <a href="https://github.com/rexlintc/cnn_segmentation">cnn_segmentation</a></p>
+      <p>Segmented actin filaments in cryo-EM 3D tomographic data, then helped automate the segmentation with CNNs.</p>
+    </div>
+    <div class="item">
+      <h3>UC Berkeley</h3>
+      <p class="meta">2014 to 2018</p>
+      <p>Dual B.A. in Data Science and Molecular and Cell Biology.</p>
+    </div>
+  </section>
 
-				<div class="stats-grid">
-					<div class="stat-card">
-						<div class="stat-icon">
-							<i class="fa fa-code"></i>
-						</div>
-						<div class="stat-content">
-							<h3 id="github-commits">Loading...</h3>
-							<p>Commits This Year</p>
-						</div>
-					</div>
+  <section>
+    <h2>Contact</h2>
+    <div class="contact-row">
+      <a href="mailto:tc.lin@berkeley.edu">tc.lin@berkeley.edu</a>
+      <a href="https://github.com/rexlintc">GitHub</a>
+      <a href="https://www.linkedin.com/in/rexlinmle/">LinkedIn</a>
+      <a href="https://x.com/rexlintc">X</a>
+    </div>
+  </section>
 
-					<div class="stat-card">
-						<div class="stat-icon">
-							<i class="fa fa-folder"></i>
-						</div>
-						<div class="stat-content">
-							<h3 id="total-projects">4</h3>
-							<p>Total Projects</p>
-						</div>
-					</div>
+  <footer>
+    <p>rexlin.io</p>
+  </footer>
 
-					<div class="stat-card">
-						<div class="stat-icon">
-							<i class="fa fa-pencil"></i>
-						</div>
-						<div class="stat-content">
-							<h3 id="blog-posts">0</h3>
-							<p>Blog Posts</p>
-						</div>
-					</div>
-
-					<div class="stat-card">
-						<div class="stat-icon">
-							<i class="fa fa-calendar"></i>
-						</div>
-						<div class="stat-content">
-							<h3 id="years-experience">5+</h3>
-							<p>Years Experience</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="recent-activity">
-					<h2>Recent Activity</h2>
-					<div class="activity-feed">
-						<div class="activity-item">
-							<div class="activity-icon">
-								<i class="fa fa-briefcase"></i>
-							</div>
-							<div class="activity-content">
-								<p><strong>Latest experience:</strong> Senior Machine Learning Engineer at Affirm</p>
-								<small>Led cross-functional teams on loan profitability systems</small>
-							</div>
-						</div>
-						<div class="activity-item">
-							<div class="activity-icon">
-								<i class="fa fa-code-fork"></i>
-							</div>
-							<div class="activity-content">
-								<p><strong>Latest Project:</strong> Stereocilia Modeling</p>
-								<small>Cryo-EM 3D tomographic analysis</small>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Resume Page -->
-			<div id="resume-page" class="page">
-				<header class="page-header">
-					<h1>Resume</h1>
-					<p>Professional experience and qualifications</p>
-				</header>
-				<div class="resume-content">
-					<div class="resume-section">
-						<h2>Experience</h2>
-						<div class="job">
-							<h3>Senior Machine Learning Engineer</h3>
-							<h4>Portfolio Machine Learning, Affirm | Jan 2024 – Feb 2025</h4>
-							<p>Spearheaded the design and implementation of the next phase of the loan
-								profitability-based underwriting decision system, coordinating efforts across 4
-								cross-functional teams. Led a working pod of 5 individual contributors, providing
-								strategic guidance and technical direction on multiple concurrent projects.</p>
-						</div>
-						<div class="job">
-							<h3>Machine Learning Engineer</h3>
-							<h4>Portfolio Machine Learning, Affirm | Feb 2023 – Jan 2024</h4>
-							<p>Architected and implemented a new underwriting decision system based on loan
-								profitability (ROA), generating a proprietary online model resulting in $8.2M+
-								contribution margin. Designed and onboarded 10+ analysts to a new internal loan
-								valuations platform.</p>
-						</div>
-						<div class="job">
-							<h3>Machine Learning Engineer</h3>
-							<h4>Computational Finance, Affirm | Sep 2020 – Feb 2023</h4>
-							<p>Engineered a patented simulation-based loan pricing optimization engine, reducing analyst
-								workflow from 1 week to 6 hours. Productionized XGBoost model for user loan term
-								selection with robust monitoring and scaling infrastructure.</p>
-						</div>
-						<div class="job">
-							<h3>Machine Learning Engineer</h3>
-							<h4>Machine Learning Platform, Affirm | May 2019 – Sep 2020</h4>
-							<p>Designed horizontally scalable Online Feature Store Service using AWS Aurora and gRPC,
-								serving 1M+ features at 119 QPS. Built monitoring and data validation framework
-								processing 5M+ rows of parquet data daily.</p>
-						</div>
-					</div>
-
-					<div class="resume-section">
-						<h2>Patent</h2>
-						<div class="job">
-							<h3>System, Method and Apparatus for Optimization of Financing Programs</h3>
-							<h4>US-20240104645-A1 | Filed Sep 22, 2022 | Issued Mar 28, 2024</h4>
-							<p>Patented simulation-based loan pricing optimization system that revolutionized analyst
-								workflows and pricing strategies.</p>
-						</div>
-					</div>
-
-					<div class="resume-section">
-						<h2>Education</h2>
-						<div class="job">
-							<h3>University of California, Berkeley</h3>
-							<h4>B.A. Data Science, B.A. Molecular and Cell Biology | Aug 2014 – Dec 2018</h4>
-							<p>Dual degree in Data Science and Molecular & Cell Biology, combining quantitative analysis
-								with biological systems understanding.</p>
-						</div>
-					</div>
-
-					<div class="resume-section">
-						<h2>Skills</h2>
-						<div class="skills-grid">
-							<div class="skill-category">
-								<h4>Programming Languages</h4>
-								<ul>
-									<li>Python</li>
-									<li>SQL</li>
-									<li>Java</li>
-								</ul>
-							</div>
-							<div class="skill-category">
-								<h4>Technologies & Frameworks</h4>
-								<ul>
-									<li>Airflow</li>
-									<li>AWS</li>
-									<li>Kubernetes</li>
-									<li>PySpark</li>
-									<li>Snowflake</li>
-									<li>XGBoost</li>
-								</ul>
-							</div>
-							<div class="skill-category">
-								<h4>Tools & Platforms</h4>
-								<ul>
-									<li>Chronosphere</li>
-									<li>Git</li>
-									<li>gRPC</li>
-									<li>AWS Aurora</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="resume-actions">
-						<a href="https://drive.google.com/file/d/1E49vzhev0LZ-1xd4_2G3y4vhNXIhlMUU/view?usp=sharing"
-							class="button primary">Download Full Resume</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- Portfolio Page -->
-			<div id="portfolio-page" class="page">
-				<header class="page-header">
-					<h1>Portfolio</h1>
-					<p>Selected projects and work</p>
-				</header>
-				<div class="portfolio-grid">
-					<article class="project-card">
-						<a href="images/fulls/01.jpg" class="project-image">
-							<img src="images/thumbs/01.jpg" alt="Stereocilia Modeling" />
-						</a>
-						<div class="project-content">
-							<h3>Stereocilia Modeling</h3>
-							<p>Using existing cryo-EM 3D tomographic whole mount stereocilia data sets, I segmented
-								actin filaments and cross-connectors using semi-automated segmentation tools.</p>
-							<a href="https://github.com/rexlintc/stereocilia" class="project-link">
-								<i class="fa fa-github"></i> View on GitHub
-							</a>
-						</div>
-					</article>
-
-					<article class="project-card">
-						<a href="images/fulls/02.jpg" class="project-image">
-							<img src="images/thumbs/02.png" alt="Automatic Segmentation" />
-						</a>
-						<div class="project-content">
-							<h3>Automatic Segmentation</h3>
-							<p>Collaborative development of automated approach for segmentation and modeling with CNN in
-								Keras, TensorFlow.</p>
-							<a href="https://github.com/rexlintc/cnn_segmentation" class="project-link">
-								<i class="fa fa-github"></i> View on GitHub
-							</a>
-						</div>
-					</article>
-
-					<article class="project-card">
-						<a href="images/fulls/03.png" class="project-image">
-							<img src="images/thumbs/03.png" alt="3D Reconstruction" />
-						</a>
-						<div class="project-content">
-							<h3>Electron Microscopy and 3D Reconstruction</h3>
-							<p>Computational Biology Final Project focusing on advanced imaging and reconstruction
-								techniques.</p>
-							<a href="https://github.com/rexlintc/Math127" class="project-link">
-								<i class="fa fa-github"></i> View on GitHub
-							</a>
-						</div>
-					</article>
-
-					<article class="project-card">
-						<a href="images/fulls/04.jpg" class="project-image">
-							<img src="images/thumbs/04.jpg" alt="Flo Chrome Extension" />
-						</a>
-						<div class="project-content">
-							<h3>Flo - Chrome Extension</h3>
-							<p>Applied Data Science Final Project - a browser extension for enhanced productivity.</p>
-							<a href="https://github.com/rexlintc/Flo" class="project-link">
-								<i class="fa fa-github"></i> View on GitHub
-							</a>
-						</div>
-					</article>
-				</div>
-			</div>
-
-			<!-- Blog Page -->
-			<div id="blog-page" class="page">
-				<header class="page-header">
-					<h1>Blog</h1>
-					<p>Thoughts on technology and machine learning</p>
-				</header>
-				<div class="blog-content">
-					<div class="coming-soon">
-						<i class="fa fa-pencil-square-o"></i>
-						<h3>Coming Soon</h3>
-						<p>I'm working on sharing insights about machine learning, software engineering, and technology
-							trends.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Contact Page -->
-			<div id="contact-page" class="page">
-				<header class="page-header">
-					<h1>Contact</h1>
-					<p>Let's connect and collaborate</p>
-				</header>
-				<div class="contact-content">
-					<div class="contact-info">
-						<div class="contact-item">
-							<i class="fa fa-envelope"></i>
-							<div>
-								<h3>Email</h3>
-								<p><a href="mailto:tc.lin@berkeley.edu">tc.lin@berkeley.edu</a></p>
-							</div>
-						</div>
-						<div class="contact-item">
-							<i class="fa fa-linkedin"></i>
-							<div>
-								<h3>LinkedIn</h3>
-								<p><a href="https://www.linkedin.com/in/tingchihlin/">tingchihlin</a></p>
-							</div>
-						</div>
-						<div class="contact-item">
-							<i class="fa fa-github"></i>
-							<div>
-								<h3>GitHub</h3>
-								<p><a href="https://github.com/rexlintc">rexlintc</a></p>
-							</div>
-						</div>
-						<div class="contact-item">
-							<i class="fa fa-twitter"></i>
-							<div>
-								<h3>Twitter</h3>
-								<p><a href="https://twitter.com/rexlintc">@rexlintc</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/dashboard.js"></script>
+</div>
 </body>
-
 </html>

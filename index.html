@@ -1,141 +1,118 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>Rex Lin</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Rex Lin — ML Engineer, Founder, Analog Photographer." />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rex Lin</title>
+<meta name="description" content="Rex Lin. Builder. Previously machine learning at Affirm.">
+<style>
+  :root {
+    --bg: #fafaf7;
+    --ink: #1a1a18;
+    --muted: #6b6b64;
+    --line: #e4e4dd;
+    --accent: #b4552d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16161a;
+      --ink: #e8e8e3;
+      --muted: #9a9a92;
+      --line: #2c2c32;
+      --accent: #e07a4d;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 88px 24px 96px; }
+  header h1 { font-size: 34px; font-weight: 700; letter-spacing: -0.02em; }
+  header .tagline { color: var(--muted); margin-top: 6px; font-size: 18px; }
+  section { margin-top: 56px; }
+  h2 {
+    font-size: 13px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.12em; color: var(--muted); margin-bottom: 18px;
+  }
+  p + p { margin-top: 14px; }
+  .item { padding: 18px 0; border-top: 1px solid var(--line); }
+  .item:last-child { border-bottom: 1px solid var(--line); }
+  .item h3 { font-size: 17px; font-weight: 600; }
+  .item .meta { color: var(--muted); font-size: 14.5px; margin-top: 2px; }
+  .item p { margin-top: 8px; font-size: 16px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .contact-row { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 4px; }
+  .contact-row a { font-size: 16px; }
+  footer { margin-top: 80px; color: var(--muted); font-size: 14px; }
+</style>
 </head>
-
 <body>
-	<header class="site-header">
-		<nav class="nav">
-			<a href="#" class="nav-name">Rex Lin</a>
-			<button class="nav-toggle" aria-label="Toggle menu">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-			<ul class="nav-links">
-				<li><a href="#about">About</a></li>
-				<li><a href="#building">Building</a></li>
-				<li><a href="#photography">Photography</a></li>
-				<li><a href="#writing">Writing</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+<div class="wrap">
 
-	<main>
+  <header>
+    <h1>Rex Lin</h1>
+    <p class="tagline">Builder.</p>
+  </header>
 
-		<!-- Hero -->
-		<section class="hero">
-			<div class="container">
-				<h1>Rex Lin</h1>
-				<p class="hero-tagline">ML Engineer &middot; Founder &middot; Analog Photographer</p>
-				<p class="hero-sub">Building something new. Previously at Affirm.</p>
-				<div class="hero-links">
-					<a href="https://github.com/rexlintc" target="_blank" rel="noopener">GitHub</a>
-					<a href="https://www.linkedin.com/in/tingchihlin/" target="_blank" rel="noopener">LinkedIn</a>
-					<a href="https://twitter.com/rexlintc" target="_blank" rel="noopener">Twitter</a>
-					<a href="mailto:tc.lin@berkeley.edu">Email</a>
-				</div>
-			</div>
-		</section>
+  <section>
+    <h2>Now</h2>
+    <p>Heads down on a startup and a few side projects. More here when they're ready. If you're curious in the meantime, email works.</p>
+  </section>
 
-		<!-- About -->
-		<section id="about" class="section">
-			<div class="container">
-				<div class="about-inner">
-					<img src="images/avatar.jpg" alt="Rex Lin" class="about-avatar" />
-					<div class="about-text">
-						<h2>About</h2>
-						<p>I'm a machine learning engineer who spent 6 years at Affirm building production ML systems —
-							from a horizontally scalable online feature store to a loan profitability underwriting
-							system that generated $8M+ in contribution margin. I also hold a patent on a
-							simulation-based loan pricing optimization engine.</p>
-						<p>I studied Data Science and Molecular &amp; Cell Biology at UC Berkeley, a combination
-							that still shapes how I think about modeling: rigorously, from first principles.</p>
-						<p>Outside of work I shoot film. There's something about the deliberateness of analog
-							photography — one frame at a time, no instant feedback — that I find grounding.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+  <section>
+    <h2>Before</h2>
+    <p>Five and a half years at Affirm as a machine learning engineer, 2019 to early 2025, across the ML platform, computational finance, and portfolio ML teams. A few things I'm glad shipped:</p>
+    <div class="item" style="margin-top: 18px;">
+      <h3>Profitability-based underwriting</h3>
+      <p class="meta">Portfolio ML, 2023 to 2025</p>
+      <p>Architected an underwriting decision system based on loan profitability, with a proprietary online model that generated over $8.2M in contribution margin. Led a pod of five engineers across four teams for the next phase.</p>
+    </div>
+    <div class="item">
+      <h3>Patented loan pricing engine</h3>
+      <p class="meta">Computational Finance. US patent US-20240104645-A1, issued March 2024</p>
+      <p>Simulation-based pricing optimization that cut a week-long analyst workflow to six hours.</p>
+    </div>
+    <div class="item">
+      <h3>Online feature store</h3>
+      <p class="meta">ML Platform, 2019 to 2020</p>
+      <p>Horizontally scalable feature serving on AWS Aurora and gRPC, serving over a million features in production.</p>
+    </div>
+  </section>
 
-		<!-- Building -->
-		<section id="building" class="section section-alt">
-			<div class="container">
-				<h2>Building</h2>
-				<div class="building-content">
-					<p>I'm in the early stages of building in ethical AI — my lifelong obsession. I'm not ready
-						to name what it is yet, but I know the space deeply and I'm talking to people who are
-						living the problems I want to solve.</p>
-					<p>If you're working on something where trust, fairness, or accountability in AI keeps you
-						up at night — in hiring, lending, healthcare, or anywhere decisions matter — I'd genuinely
-						love to hear about it. No pitch, just a conversation.</p>
-					<a href="mailto:tc.lin@berkeley.edu" class="cta-link">Tell me about your problem &rarr;</a>
-				</div>
-			</div>
-		</section>
+  <section>
+    <h2>Earlier</h2>
+    <div class="item">
+      <h3>Stereocilia imaging research</h3>
+      <p class="meta">LBNL. <a href="https://github.com/rexlintc/stereocilia">stereocilia</a> and <a href="https://github.com/rexlintc/cnn_segmentation">cnn_segmentation</a></p>
+      <p>Segmented actin filaments in cryo-EM 3D tomographic data, then helped automate the segmentation with CNNs.</p>
+    </div>
+    <div class="item">
+      <h3>UC Berkeley</h3>
+      <p class="meta">2014 to 2018</p>
+      <p>Dual B.A. in Data Science and Molecular and Cell Biology.</p>
+    </div>
+  </section>
 
-		<!-- Photography -->
-		<section id="photography" class="section">
-			<div class="container">
-				<h2>Photography</h2>
-				<p class="section-lead">[A line about what you shoot — subjects, formats, favorite film stocks.]</p>
-				<div class="photo-placeholder">
-					<p>Photos coming soon.</p>
-				</div>
-			</div>
-		</section>
+  <section>
+    <h2>Contact</h2>
+    <div class="contact-row">
+      <a href="mailto:tc.lin@berkeley.edu">tc.lin@berkeley.edu</a>
+      <a href="https://github.com/rexlintc">GitHub</a>
+      <a href="https://www.linkedin.com/in/rexlinmle/">LinkedIn</a>
+      <a href="https://x.com/rexlintc">X</a>
+    </div>
+  </section>
 
-		<!-- Writing -->
-		<section id="writing" class="section section-alt">
-			<div class="container">
-				<h2>Writing</h2>
-				<p class="section-lead">Occasional thoughts on ML, building, and life.</p>
-				<div class="post-list">
-					<article class="post-item">
-						<span class="post-date">Coming soon</span>
-						<div>
-							<h3 class="post-title">[Why I Left Affirm to Build X]</h3>
-							<p class="post-excerpt">On the decision to leave a good job and start building
-								something from scratch.</p>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section>
+  <footer>
+    <p>rexlin.io</p>
+  </footer>
 
-		<!-- Contact -->
-		<section id="contact" class="section">
-			<div class="container">
-				<h2>Contact</h2>
-				<p>Best reached by email: <a href="mailto:tc.lin@berkeley.edu">tc.lin@berkeley.edu</a></p>
-				<div class="contact-links">
-					<a href="https://github.com/rexlintc" target="_blank" rel="noopener">GitHub</a>
-					<a href="https://www.linkedin.com/in/tingchihlin/" target="_blank" rel="noopener">LinkedIn</a>
-					<a href="https://twitter.com/rexlintc" target="_blank" rel="noopener">Twitter</a>
-					<a href="https://drive.google.com/file/d/1E49vzhev0LZ-1xd4_2G3y4vhNXIhlMUU/view?usp=sharing"
-						target="_blank" rel="noopener">Resume</a>
-				</div>
-			</div>
-		</section>
-
-	</main>
-
-	<footer class="site-footer">
-		<div class="container">
-			<p>&copy; 2026 Rex Lin</p>
-		</div>
-	</footer>
-
-	<script src="assets/js/site.js"></script>
+</div>
 </body>
-
 </html>
